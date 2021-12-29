@@ -1,0 +1,107 @@
+:root {
+    --priColor: #468ee0;
+    --darkBlack: rgba(0, 0, 0, 0.8);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.coverPhoto {
+    position: relative;
+    height: 50vh;
+    background-color: var(--darkBlack);
+}
+
+.profileContainer {
+    position: absolute;
+    height: 110%;
+    width: 40%;
+    top: 50%;
+    left: 30%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.548);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.colorBar {
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    height: 25%;
+    background-color: rgba(70, 142, 224, 0.15);
+    border-bottom: 1px solid var(--priColor);
+    margin-bottom: 70px;
+}
+
+.profilePicContainer {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 60px);
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 10px var(--darkBlack);
+    overflow: hidden;
+}
+
+.profilePic {
+    display: block;
+    height: 100%;
+}
+
+.iconInfo {
+    color: var(--priColor);
+}
+
+.caps {
+    text-transform: capitalize;
+}
+
+.userInfo {
+    font-size: 1.8rem;
+    margin: 7px;
+}
+
+.iconContainer {
+    margin: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.icon {
+    font-size: 1.5rem;
+    padding: 5px;
+    color: var(--darkBlack);
+    border-radius: 5px;
+}
+
+.changeColor {
+    color: var(--priColor);
+}
+
+.icon:hover {
+    outline: 1px solid var(--priColor);
+    cursor: pointer;
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--priColor);
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition-duration: 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: var(--priColor);
+    background-color: white;
+    box-shadow: 0 0 15px var(--priColor);
+}
